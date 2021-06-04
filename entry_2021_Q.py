@@ -65,7 +65,7 @@ def challenge_entry(sample_path):
     model.load_state_dict(torch.load('./CPSC2021_0.99398.pth'))#读模型
     
     target_path=sample_path
-    data_interval = 164
+    data_interval = 20
     data_length = 1600
     # flag=1
     data_files = glob.glob(target_path+'*.dat')
