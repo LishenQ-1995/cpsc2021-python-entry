@@ -160,8 +160,13 @@ def score(data_path, ans_path):
     return score_avg
 
 if __name__ == '__main__':
+    
+    # TESTSET_PATH="/home/ps/cwq/2021生理参数挑战赛/代码4房颤分类/分数/验证集数据/验证集数据/"
+    # RESULT_PATH="/home/ps/cwq/2021生理参数挑战赛/代码4房颤分类/分数/验证集数据/验证集结果/"
+    
     TESTSET_PATH = sys.argv[1]
     RESULT_PATH = sys.argv[2]
+    
     score_avg = score(TESTSET_PATH, RESULT_PATH)
     print('AF Endpoints Detection Performance: %0.4f' %score_avg)
 
